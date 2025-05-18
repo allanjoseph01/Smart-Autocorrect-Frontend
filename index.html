@@ -32,7 +32,7 @@
             }
 
             timeout = setTimeout(() => {
-                fetch("/check", {
+                fetch("https://smart-autocorrect.onrender.com/check", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ word })
