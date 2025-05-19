@@ -23,14 +23,12 @@
         let timeout = null;
 
         inputBox.oninput = function () {
-            clearTimeout(timeout); // debounce
+            clearTimeout(timeout);
             const word = inputBox.value.trim();
-
             if (word === "") {
                 resultBox.innerText = "Suggestions will appear here...";
                 return;
             }
-
             timeout = setTimeout(() => {
                 fetch("https://smart-autocorrect.onrender.com/check", {
                     method: "POST",
@@ -46,6 +44,14 @@
                 });
             }, 300);
         };
+
+        inputBox.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                inputBox.value = "";
+                resultBox.innerText = "Suggestions will appear here...";
+            }
+        });
+
     </script>
 </body>
 </html>
