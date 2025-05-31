@@ -79,7 +79,7 @@ Type in the input field to receive live spelling suggestions.
 
 ---
 
-**⚙️ How It Works**
+## ⚙️ How It Works
 
 1. Dictionary Building:
 
