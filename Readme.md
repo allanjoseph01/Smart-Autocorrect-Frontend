@@ -77,6 +77,8 @@ Visit:
 http://localhost:3000
 Type in the input field to receive live spelling suggestions.
 
+---
+
 **⚙️ How It Works**
 
 1. Dictionary Building:
@@ -98,6 +100,8 @@ Suggestions are ranked using a max-heap based on closeness (min edit distance).
 5. Output:
 
 Top suggestions are returned to the frontend for display.
+
+---
 
 ### 📝 Assumptions Made
 All dictionary words are lowercase.
